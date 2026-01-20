@@ -68,6 +68,7 @@ footer{
     gap: 5%;
     align-items: center;
     justify-content: center;
+    background-color: rgb(250, 250, 250);
 }
 
 .navbar a{
@@ -144,6 +145,7 @@ footer{
 .platform-btn{
     color: white;
     background-color: rgb(0, 70, 160);
+    border: none;
     outline: auto;
     cursor: pointer;
     height: 100px;
@@ -174,10 +176,41 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 6vh;
+    margin-top: 5vh;
 }
 
 .subcontent{
+    width: 90%;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+    padding: 2vh;
+    max-width: 35%;
+    height: fit-content;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: ease 0.3s;
+}
+
+.tile p{
+    font-size: 2.5vh;
+}
+
+.tile h1{
+    font-size: 5vh;
 }
 
 @media (max-width: 1024px) {
@@ -224,5 +257,9 @@ footer{
 
     .footer-text{
         border-bottom: 1px solid white;
+    }
+    .tile{
+        max-width: 80%;
+        transition: ease 0.3s;
     }
 }
