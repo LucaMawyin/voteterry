@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 :root{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Charis SIL", sans-serif;
 }
 
 html, body {
     width: 100%;
     padding: 0;
     margin: 0;
+    cursor: default;
+    user-select: none;
 }
 
 h1{
@@ -169,8 +172,6 @@ footer{
     flex-wrap: wrap;
 }
 
-
-
 .content{
     display: flex;
     flex-direction: column;
@@ -214,7 +215,57 @@ footer{
 }
 
 #about-content{
+    display: flex;
     flex-direction: row;
+}
+
+#about-content img{
+    max-width: 40%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+#about-content h1{
+    display: flex;
+    justify-content: center;
+}
+
+#about-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+    font-size: 2.5vh;
+}
+
+#about-text p{
+    font-size: 1.2em;
+}
+
+#about-text h1{
+    font-size: 3.5vw;
+}
+
+.signature{
+    font-family: 'Style Script', cursive;
+    font-size: 3em !important;
+    justify-self: center;
+}
+
+#event-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-tile {
+    max-width: 30% !important;
+}
+
+.event-tile img{
+    max-width: 100%;
+
 }
 
 @media (max-width: 1024px) {
@@ -271,5 +322,25 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 5vh;
+    }
+
+    #about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-content img{
+        max-width: 80%;
+    }
+
+    #about-text h1{
+        font-size: 6vh;
+    }
+
+    #event-content{
+        flex-direction: column;
+    }
+
+    .event-tile {
+        max-width: 80% !important;
     }
 }
