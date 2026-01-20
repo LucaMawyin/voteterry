@@ -192,9 +192,13 @@ footer{
     text-align: center;
 }
 
-.content h1{
-    font-size: 6vh;
-    margin-top: 5vh;
+.page-title {
+    width: 100%;
+    text-align: center;
+}
+
+.page-title h1{
+    font-size: 7vh;
 }
 
 .subcontent{
@@ -235,6 +239,7 @@ footer{
     max-width: 40%;
     margin: 2%;
     border-radius: 10px;
+    align-self: flex-start;
 }
 
 #about-content h1{
@@ -400,6 +405,7 @@ footer{
     }
     #about-content img{
         max-width: 80%;
+        align-self: center;
     }
 
     #about-text h1{
