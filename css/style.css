@@ -12,6 +12,7 @@ html, body {
     margin: 0;
     cursor: default;
     user-select: none;
+    flex-shrink: 0;
 }
 
 body {
