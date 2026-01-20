@@ -71,6 +71,10 @@ footer{
     align-items: center;
 }
 
+.footer-text h2{
+    font-size: 1.2em;
+}
+
 .navbar{
     display: flex;
     width: 100%;
@@ -378,6 +382,7 @@ footer{
     .footer-text{
         border-bottom: 1px solid white;
     }
+
     .tile{
         max-width: 80%;
         transition: ease 0.3s;
