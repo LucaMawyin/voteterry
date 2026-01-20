@@ -400,5 +400,9 @@ footer{
         font-size: 6vh;
     }
 
+    .blog-post{
+        width: 80%;
+    }
+
 
 }
