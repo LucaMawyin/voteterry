@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote Terry Christodoulou</title>
     <link rel="stylesheet" href="css/global.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +19,14 @@
 </header>
 
 <div class="hero">
+
+    <dialog class="popup" id="vote-popup">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <h1>VOTING IS NOW OPEN</h1>
+        <a class="btn-wrapper" href="https://mcmaster.simplyvoting.com/vote.php" target="_blank">
+            <button type="button" class="platform-btn"><b>VOTE!</b></button>
+        </a>
+    </dialog>
 
     <div class="hero-img">
         <img src="images/headshot.avif">
@@ -37,7 +46,7 @@
                 <a class="btn-wrapper" href="terry-christodoulou-platform.pdf" target="_blank">
                     <button type="button" class="platform-btn">Our Platform</button>
                 </a>
-                <a class="btn-wrapper" href="https://mcmaster.simplyvoting.com/" target="_blank">
+                <a class="btn-wrapper" href="https://mcmaster.simplyvoting.com/vote.php" target="_blank">
                     <button type="button" class="platform-btn"><b>VOTE!</b></button>
                 </a>
             </div>
